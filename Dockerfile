@@ -27,5 +27,5 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& rm drupal.tar.gz \
 	&& chown -R www-data:www-data sites
 
-EXPOSE 80
+EXPOSE 80 443
 CMD ["apache2-foreground"]
