@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev libm
 WORKDIR /var/www/html
 
 # https://www.drupal.org/node/3060/release
-ENV DRUPAL_VERSION 7.41
+ENV DRUPAL_VERSION 7.43
 ENV DRUPAL_MD5 7636e75e8be213455b4ac7911ce5801f
 
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
